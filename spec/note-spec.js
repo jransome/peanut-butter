@@ -1,10 +1,6 @@
 it('test', function(){
   return expect("hello").toBeInstanceOf(Number);
 });
-//
-it('checks equality', function(){
-  return expect(note1._content).toEqual("hello");
-});
 
 it('Checks an item is included in an array', function() {
   var numArray = [1, 2, 3, 4, 5];
@@ -14,4 +10,8 @@ it('Checks an item is included in an array', function() {
 it('Checks an item is included in an array', function() {
   var numArray = [1, 2, 3, 4, 5];
   return expect(numArray).toInclude(1);
+});
+
+it('Checks for equality between two items', function() {
+  return expect("This is a string").toEqual("This is another string");
 });
