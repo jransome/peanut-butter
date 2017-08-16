@@ -1,3 +1,3 @@
 function Note(content){
-  this._text = content;
+  this._content = content;
 }
