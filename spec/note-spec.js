@@ -15,3 +15,8 @@ it('Checks an item is included in an array', function() {
 it('Checks for equality between two items', function() {
   return expect("This is a string").toEqual("This is another string");
 });
+
+it('Checks for equality between two items', function() {
+  var i = new Thing();
+  return expect("This is a string").toEqual("This is another string");
+});
