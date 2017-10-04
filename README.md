@@ -1,9 +1,40 @@
 # Peanut Butter
 
-A tasty JS testing framework.
+A tasty JS testing framework which can test for the following assertions:
 
-### Contributors
+* that two objects are equal
+* that a given array includes something
+* that a given object is a type of something
+
+## Example tests
+The following is also included in src/greeter-spec.js
+
+```
+var name = "James";
+var expectedGreeting = "Hello, James!";
+var smallTalk = "so..."
+
+describe("Greeter", function(){
+  it("returns a string", function(){
+    return expect(Greeter(name)).toBeInstanceOf(String);
+  });
+
+  it("greets someone by name", function(){
+    return expect(Greeter(name)).toEqual(expectedGreeting);
+  });
+
+  it("can make small talk", function(){
+    return expect(Greeter(name)).toInclude(smallTalk);
+  });
+});
+
+```
+
+## Contributors
+
 * Antoine Doolaeghe
 * Ben Hughes
 * Funmi Adewodu
 * James Ransome
+
+This testing framework was originally developed in under a week as part of another project during the Makers Academy course. 
