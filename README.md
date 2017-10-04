@@ -6,6 +6,8 @@ A tasty JS testing framework which can test for the following assertions:
 * that a given array includes something
 * that a given object is a type of something
 
+To run tests open PeanutRunner in a web browser.
+
 ## Example tests
 The following is also included in src/greeter-spec.js
 
@@ -37,4 +39,4 @@ describe("Greeter", function(){
 * Funmi Adewodu
 * James Ransome
 
-This testing framework was originally developed in under a week as part of another project during the Makers Academy course. 
+This testing framework was originally developed in under a week as part of another project during the Makers Academy course.
