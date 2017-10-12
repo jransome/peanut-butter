@@ -32,6 +32,17 @@ describe("Greeter", function(){
 
 ```
 
+#### Doubles
+
+Example usage:
+```
+var greeterDouble = new Double(['greet', 'doSmallTalk']); // creates a double with two mock functions that return undefined by default.
+
+greeterDouble.stubFunctionAndReturn('greet', "hello!"); // stubs the greet function with a return value of "hello!".
+
+greeterDouble.greetCallCount // returns the number of times 'greet' has been called.
+```
+
 ## Contributors
 
 * Antoine Doolaeghe
