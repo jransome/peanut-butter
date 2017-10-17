@@ -41,6 +41,7 @@ var greeterDouble = new Double(['greet', 'doSmallTalk']); // creates a double wi
 greeterDouble.stubFunctionAndReturn('greet', "hello!"); // stubs the greet function with a return value of "hello!".
 
 greeterDouble.greetCallCount // returns the number of times 'greet' has been called.
+greeterDouble.greetArguments // returns an array of the arguments passed last time the function was invoked.
 ```
 
 ## Contributors
